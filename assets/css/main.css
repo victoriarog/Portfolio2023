@@ -1,0 +1,28 @@
+html, body {
+    background: rgb(140,28,19);
+    background: radial-gradient(circle, rgba(140,28,19,1) 2%, rgba(74,16,12,1) 34%, rgba(51,12,9,1) 64%); 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  
+  h1,h2 {
+    color: #e7d7c1;
+  }
+  
+  /*phones*/
+  @media screen and (max-width: 500px) {
+  
+      
+  
+    }
+  
+  /*desktop*/
+  @media screen and (min-width: 1200px) {
+  
+  
+  
+  }
+    
