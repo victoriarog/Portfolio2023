@@ -4,19 +4,11 @@
 </script>
 
 <template>
-  <div>
-
-    <h1>Hi!</h1>
-    <h1>My name is Victoria</h1>
-
-    <h2>
-        I'm a front-end developer with a passion for <br/>
-        programming, art and games.
-    </h2>
-    
+  <div class="nav">
+    <NuxtLink to="/"><h3>Home</h3><img class="icon" src="../assets/icons/home.svg" :height="35" :width="35"/></NuxtLink>
+    <NuxtLink to="/projects"><h3>Projects</h3><img class="icon" src="../assets/icons/folder.svg" :height="35" :width="35"/></NuxtLink>
+    <NuxtLink to="/art"><h3>Art</h3><img class="icon" src="../assets/icons/art.svg" :height="35" :width="35"/></NuxtLink>
+    <NuxtLink to="/about"><h3>About</h3><img class="icon" src="../assets/icons/smile.svg" :height="35" :width="35"/></NuxtLink>
   </div>
 </template>
-
-<style scoped>
-
-</style>
+   
