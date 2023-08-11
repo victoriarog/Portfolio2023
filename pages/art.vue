@@ -1,7 +1,7 @@
 <template>
     <Header/>
     <div>
-        <h1 class="comph1">Art</h1>
+        <h1 class="comph1">{{ $t('art') }}</h1>
     </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
     <Header/>
     <div>
-        <h1 class="comph1">Projectsss</h1>
+        <h1 class="comph1">{{ $t('projects') }}</h1>
     </div>
 </template>

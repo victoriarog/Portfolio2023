@@ -1,3 +1,4 @@
-<template> 
+<template>
+    <Languages/>
     <NuxtPage />
 </template>
