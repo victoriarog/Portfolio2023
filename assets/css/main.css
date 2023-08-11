@@ -43,12 +43,17 @@ html, body {
   @media screen and (max-width: 500px) {
 
     .introtext {
-        padding-top: 3vh;
+        padding-top: 1vh;
     }
 
     .toph1 {
         font-size: 6vh;
         padding: 4vh 0 2vh 2vh;
+    }
+
+    .comph1 {
+        font-size: 5vh;
+        padding: 4vh 0 0 2vh;
     }
 
     .botth1 {
