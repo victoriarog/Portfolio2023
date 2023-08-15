@@ -15,7 +15,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
   }
   
   h1,h2, h3, .langb  {
@@ -103,13 +103,36 @@ html, body {
     .langbuttons {
       padding: 2vh 0 0 2vh;
     }
+
+    .indexhero {
+      display: none;
+    }
   
     }
   
   /*desktop*/
-  @media screen and (min-width: 1200px) {
-  
-  
+  @media screen and (min-width: 1200px) { 
+
+    .indexhero {
+        margin-top: -10vh;
+        margin-left: 25%;
+    }
+
+    .heroimg {
+      height: 100vh;
+    }
+
+    .icon {
+      display: none;
+    }
+
+    .nav {
+      display: none;
+    }
+
+    .introtext {
+      display: none;
+    }
   
   }
     
