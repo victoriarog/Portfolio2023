@@ -1,5 +1,6 @@
 <template>
     <div class="indexhero">
-        <img class="heroimg" src="../assets/heros/hero.png"/>
+        <img class="backimg" src="../assets/heros/back.png"/>
+        <img class="girlimg" src="../assets/heros/girl.png"/>
     </div>
 </template>

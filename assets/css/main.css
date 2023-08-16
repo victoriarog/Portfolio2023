@@ -15,7 +15,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   
   h1,h2, h3, .langb  {
@@ -114,12 +115,27 @@ html, body {
   @media screen and (min-width: 1200px) { 
 
     .indexhero {
-        margin-top: -10vh;
-        margin-left: 25%;
+      padding-top: 5vh;
+      position: relative;
+      left: 35%;
+      height: 80vh;
+      width: 30%;
     }
 
-    .heroimg {
-      height: 100vh;
+    .backimg {
+      height: 80vh;
+      position: absolute;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .girlimg {
+      position: absolute;
+      height: 65vh;
+      left: 4.5vw;
+      top: 20vh;
+      width: 70%;
+      margin: 0 auto;
     }
 
     .icon {
