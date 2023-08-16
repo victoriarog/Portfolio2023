@@ -9,8 +9,9 @@
 
 
 html, body {
-    background: rgb(28,37,65);
-    background: radial-gradient(circle, rgba(28,37,65,1) 13%, rgba(29,39,60,1) 23%, rgba(11,19,43,1) 56%); 
+  background-color: #141a2e;
+    /* background: rgb(28,37,65); */
+    /* background: radial-gradient(circle, rgba(28,37,65,1) 13%, rgba(29,39,60,1) 23%, rgba(11,19,43,1) 56%);  */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -108,15 +109,94 @@ html, body {
     .indexhero {
       display: none;
     }
+
+    .arrowsdiv {
+      display: none;
+    }
   
     }
   
   /*desktop*/
   @media screen and (min-width: 1200px) { 
 
-    .indexhero {
-      padding-top: 5vh;
+    .arrowsdiv {
       position: relative;
+      height: 50vh;
+      width: 70%;
+      padding-top: 10vh;
+      z-index: 2;
+    }
+
+    .lefthalfarrow, .leftarrow, .toparrow, .rightarrow, .righthalfarrow {
+      transition: all 0.3s;
+    }
+
+    /* :where(.lefthalfarrow, .leftarrow, .toparrow, .rightarrow, .righthalfarrow):hover {
+   
+    -webkit-box-shadow:0px 0px 152px 30px rgba(249,252,58,0.85);
+    -moz-box-shadow: 0px 0px 152px 30px rgba(249,252,58,0.85);
+    box-shadow: 0px 0px 152px 30px rgba(249,252,58,0.85);
+
+    } */
+
+    .lefthalfarrow {
+      position: absolute;
+      transform: rotate(-90deg);
+      top: 20vh;
+      transition: all 0.3s;
+    }
+
+    .lefthalfarrow:hover {
+      transform: rotate(-90deg) scale(1.05);
+    }
+
+    .leftarrow {
+      position: absolute;
+      transform: rotate(-50deg);
+      bottom: 23vh;
+      right: 14vw;
+    }
+
+    .leftarrow:hover {
+      transform: rotate(-50deg) scale(1.05);
+    }
+
+    .toparrow {
+      bottom: 41vh;
+      right: 2.5vw;
+      position: absolute;
+    }
+
+    .toparrow:hover {
+      transform: scale(1.05);
+    }
+
+    .rightarrow {
+      position: absolute;
+      left: 23vw;
+      bottom: 23vh;
+      transform: rotate(50deg);
+    }
+
+    .rightarrow:hover{
+      transform: rotate(50deg) scale(1.05);
+    }
+
+    .righthalfarrow {
+      position: absolute;
+      top: 20vh;
+      left: 27vw;
+      transform: rotate(90deg) scaleX(-1);
+    }
+
+    .righthalfarrow:hover{
+      transform: rotate(90deg) scaleX(-1) scale(1.05);
+    }
+
+    .indexhero {
+      padding-top: 15vh;
+      z-index: 0;
+      position: absolute;
       left: 35%;
       height: 80vh;
       width: 30%;
@@ -127,15 +207,17 @@ html, body {
       position: absolute;
       width: 100%;
       margin: 0 auto;
+      z-index: 1;
     }
 
     .girlimg {
       position: absolute;
       height: 65vh;
       left: 4.5vw;
-      top: 20vh;
+      top: 30vh;
       width: 70%;
       margin: 0 auto;
+      z-index: 3;
     }
 
     .icon {
