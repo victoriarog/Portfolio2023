@@ -1,44 +1,40 @@
 @font-face {
     font-family: CustomFontSB;
-    src: url('../fonts/Harmond-SemiBoldCondensed.otf');
+    src: url('../fonts/Gilroy-Light.otf');
 }
 @font-face {
     font-family: CustomFontB;
-    src: url('../fonts/Harmond-ExtraBoldExpanded.otf');
+    src: url('../fonts/Gilroy-ExtraBold.otf');
 }
 
 
 html, body {
-  background-color: #141a2e;
-    /* background: rgb(28,37,65); */
-    /* background: radial-gradient(circle, rgba(28,37,65,1) 13%, rgba(29,39,60,1) 23%, rgba(11,19,43,1) 56%);  */
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  background-color: #f7f4eb;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  cursor: none;
   }
   
   h1,h2, h3, .langb  {
-    color: #e7d7c1;
+    color:#212124;
   }
 
   h1, .langb {
     font-family: 'CustomFontB';
+    font-weight: 400;
   }
 
-  h2, h3  {
+  h2, h3, p  {
     font-family: 'CustomFontSB';
   }
 
   NuxtLink, a {
     text-decoration: none;
+    cursor: none;
     
-  }
-
-  .icon {
-    filter: invert(100%) sepia(63%) saturate(906%) hue-rotate(303deg) brightness(95%) contrast(91%);
   }
 
   .langb {
@@ -70,7 +66,7 @@ html, body {
     }
 
     h2, h3 {
-        font-size: 2.5vh;
+        font-size: 3.5vh;
     }
   
     h3 {
@@ -89,7 +85,7 @@ html, body {
     .nav {
         padding-left: 4vh;
         position: fixed;
-        bottom: 0;
+        /* bottom: 0; */
     }
 
     h1, h2 {
@@ -105,132 +101,46 @@ html, body {
     .langbuttons {
       padding: 2vh 0 0 2vh;
     }
-
-    .indexhero {
-      display: none;
-    }
-
-    .arrowsdiv {
-      display: none;
-    }
   
     }
   
   /*desktop*/
-  @media screen and (min-width: 1200px) { 
-
-    .arrowsdiv {
-      position: relative;
-      height: 50vh;
-      width: 70%;
-      padding-top: 10vh;
-      z-index: 2;
-    }
-
-    .lefthalfarrow, .leftarrow, .toparrow, .rightarrow, .righthalfarrow {
-      transition: all 0.3s;
-    }
-
-    /* :where(.lefthalfarrow, .leftarrow, .toparrow, .rightarrow, .righthalfarrow):hover {
-   
-    -webkit-box-shadow:0px 0px 152px 30px rgba(249,252,58,0.85);
-    -moz-box-shadow: 0px 0px 152px 30px rgba(249,252,58,0.85);
-    box-shadow: 0px 0px 152px 30px rgba(249,252,58,0.85);
-
-    } */
-
-    .lefthalfarrow {
-      position: absolute;
-      transform: rotate(-90deg);
-      top: 20vh;
-      transition: all 0.3s;
-    }
-
-    .lefthalfarrow:hover {
-      transform: rotate(-90deg) scale(1.05);
-    }
-
-    .leftarrow {
-      position: absolute;
-      transform: rotate(-50deg);
-      bottom: 23vh;
-      right: 14vw;
-    }
-
-    .leftarrow:hover {
-      transform: rotate(-50deg) scale(1.05);
-    }
-
-    .toparrow {
-      bottom: 41vh;
-      right: 2.5vw;
-      position: absolute;
-    }
-
-    .toparrow:hover {
-      transform: scale(1.05);
-    }
-
-    .rightarrow {
-      position: absolute;
-      left: 23vw;
-      bottom: 23vh;
-      transform: rotate(50deg);
-    }
-
-    .rightarrow:hover{
-      transform: rotate(50deg) scale(1.05);
-    }
-
-    .righthalfarrow {
-      position: absolute;
-      top: 20vh;
-      left: 27vw;
-      transform: rotate(90deg) scaleX(-1);
-    }
-
-    .righthalfarrow:hover{
-      transform: rotate(90deg) scaleX(-1) scale(1.05);
-    }
-
-    .indexhero {
-      padding-top: 15vh;
-      z-index: 0;
-      position: absolute;
-      left: 35%;
-      height: 80vh;
-      width: 30%;
-    }
-
-    .backimg {
-      height: 80vh;
-      position: absolute;
-      width: 100%;
-      margin: 0 auto;
-      z-index: 1;
-    }
-
-    .girlimg {
-      position: absolute;
-      height: 65vh;
-      left: 4.5vw;
-      top: 30vh;
-      width: 70%;
-      margin: 0 auto;
-      z-index: 3;
-    }
+  @media screen and (min-width: 1200px) {
 
     .icon {
-      display: none;
-    }
-
-    .nav {
       display: none;
     }
 
     .introtext {
       display: none;
     }
+
+    .nav {
+      position: relative;
+      /* display: none; */
+      display: flex;
+      align-items: center;
+      left: 20vw;
+      bottom: 6vh;
+    }
+
+    NuxtLink, a {
+      padding: 0 2vw 0 2vw;
+    }
+
+    .headert {
+      font-family: 'CustomFontB' !important;
+      font-size: 3vh;
+    }
+
+    .comph1 {
+      padding: 0 0 0 4vw;
+    }
+
+    .langbuttons {
+      padding: 2vh 0 0 2vh;
+    }
+
   
   }
     

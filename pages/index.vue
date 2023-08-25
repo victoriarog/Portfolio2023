@@ -1,5 +1,6 @@
 <template> 
     <Header/>
     <IntroT/>
-    <HeroImg/>
+    <CustomCursor/>
 </template>
+
