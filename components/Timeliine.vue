@@ -1,65 +1,51 @@
 <template>
+  <div class="divline">
     <div class="timeline">
   <div class="container left">
     <div class="content">
+      <h2>1998</h2>
+        <p>Born in Moscow, Russia, on May 20th 1998
+        </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2013</h2>
+        <p>Moved from Moscow to Barcelona, Spain
+        </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
       <h2>2017</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad 
-        nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. 
-        Ea quis iuvaret expetendis his, te elit voluptua dignissim per, 
-        habeo iusto primis ea eam.
+        <p>Graduated from the British School of Barcelona
         </p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2016</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci,
-            ad nec admodum perfecto mnesarchum, vim ea mazim fierent 
-            detracto. Ea quis iuvaret expetendis his, te elit voluptua 
-            dignissim per, habeo iusto primis ea eam.
+      <h2>2020</h2>
+        <p>Started Bachelors degree in Computer Science in 
+          Harbour.Space University, Barcelona, Spain.  
         </p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
-      <h2>2015</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, 
-            ad nec admodum perfecto mnesarchum, vim ea mazim fierent 
-            detracto. Ea quis iuvaret expetendis his, te elit voluptua 
-            dignissim per, habeo iusto primis ea eam.
-        </p>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-      <h2>2012</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, 
-            ad nec admodum perfecto mnesarchum, vim ea mazim fierent 
-            detracto. Ea quis iuvaret expetendis his, te elit voluptua
-            dignissim per, habeo iusto primis ea eam.
-        </p>
-    </div>
-  </div>
-  <div class="container left">
-    <div class="content">
-      <h2>2011</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci,
-            ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-             detracto. Ea quis iuvaret expetendis his, te elit voluptua
-              dignissim per, habeo iusto primis ea eam.
+      <h2>2021</h2>
+        <p>- Diploma in C++ Programming for Unreal Engine from CG Spectrum. <br/>
+           - Started work as a Frontend Developer at Urban Animals NFT
             </p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2007</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci,
-             ad nec admodum perfecto mnesarchum, vim ea mazim fierent
-              detracto. Ea quis iuvaret expetendis his, te elit voluptua 
-              dignissim per, habeo iusto primis ea eam.
+      <h2>2023</h2>
+        <p>Graduated from Harbour.Space University
             </p>
     </div>
   </div>
+</div>
 </div>
 </template>
 
@@ -72,11 +58,16 @@ body {
   background-color: #474e5d;
 }
 
+.divline {
+  padding: 2vh 0 5vh 0;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 70%;
+  max-width: 60%;
   margin: 0 auto;
+  padding: 2vh 0 2vh 0;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -133,31 +124,26 @@ body {
 .content {
   padding: 5px 20px;
   position: relative;
-  background-color: rgba(71, 78, 93, 0.15);
+  background-color: rgba(71, 78, 93, 0.1);
   border-radius: 10px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
+
   .timeline::after {
   left: 31px;
   }
   
-  /* Full-width containers */
   .container {
   width: 100%;
   padding-left: 70px;
   padding-right: 25px;
   }
-  
 
-  /* Make sure all circles are at the same spot */
   .left::after, .right::after {
   left: 15px;
   }
-  
-  /* Make all right containers behave like the left ones */
   .right {
   left: 0%;
   }

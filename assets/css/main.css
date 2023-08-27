@@ -34,17 +34,27 @@ html, body {
   NuxtLink, a {
     text-decoration: none;
     cursor: none;
-    
+    color: #212124;
+  }
+
+  NuxtLink:hover, a:hover {
+    transform: scale(1.2);
+    transition: transform 0.4s ease;
   }
 
   .langb {
     background-color: transparent;
     border: none;
     font-size: 2.5vh;
+    cursor: none;
   }
 
   /*phones*/
   @media screen and (max-width: 500px) {
+
+    /* #inner, #outer {
+      display: none;
+    } */
 
     .introtext {
         padding-top: 1vh;
@@ -85,7 +95,7 @@ html, body {
     .nav {
         padding-left: 4vh;
         position: fixed;
-        /* bottom: 0; */
+        bottom: 0;
     }
 
     h1, h2 {
@@ -101,6 +111,14 @@ html, body {
     .langbuttons {
       padding: 2vh 0 0 2vh;
     }
+
+    .langb {
+      font-size: 3vh;
+    }
+
+    .socials {
+      display: none;
+    }
   
     }
   
@@ -113,6 +131,18 @@ html, body {
 
     .introtext {
       display: none;
+    }
+
+    .socials {
+      position: relative;
+      display: flex;
+      align-items: center;
+      z-index: 4;
+      float: right;
+      transform: rotate(90deg);
+      top: 40vh;
+      left: 3vw;
+      font-size: 2.7vh;
     }
 
     .nav {
