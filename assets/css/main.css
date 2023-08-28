@@ -50,14 +50,28 @@ html, body {
   }
 
   /*phones*/
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
+    .herodiv {
+      position: relative;
+      left: 5vw;
+      top: 9vh;
+    }
+
+    .heroimg {
+      height: 45vh;
+      width: auto;
+    }
 
     #inner, #outer {
       display: none;
     }
 
     .introtext {
-        padding-top: 1vh;
+        padding: 1vh 0 0 1vw;
+    }
+
+    .introh2 {
+      font-size: 2.3vh;
     }
 
     .toph1 {
@@ -85,7 +99,7 @@ html, body {
     }
 
     .icon {
-        padding: 1vh 7vw;
+        padding: 1vh 5vw;
         z-index: 10;
     }
 
@@ -94,9 +108,11 @@ html, body {
     }
 
     .nav {
-        padding-left: 4vh;
+        padding-left: 10vw;
         position: fixed;
         bottom: 0;
+        z-index: 10;
+        background-color: #f7f4eb;
     }
 
     h1, h2 {
@@ -125,6 +141,47 @@ html, body {
   
   /*desktop*/
   @media screen and (min-width: 1200px) {
+
+    .circle {
+      position: relative;
+      left: 33vw;
+      bottom: 15vh;
+    }
+
+    .circle1 {
+      position: relative;
+      left: 60vw;
+      bottom: 45vh;
+    }
+
+    .circle2 {
+      position: relative;
+      left: 50vw;
+      bottom: 15vh;
+    }
+
+    .circle3 {
+      position: relative;
+      left: 34vw;
+      bottom: 70vh;
+    }
+
+    .circle4 {
+      position: relative;
+      left: 48vw;
+      bottom: 88vh;
+    }
+
+    .herodiv {
+      position: relative;
+      top: 10vh;
+      left: 33vw;
+    }
+
+    .heroimg {
+      height: 65vh;
+      width: auto;
+    }
 
     .icon {
       display: none;
