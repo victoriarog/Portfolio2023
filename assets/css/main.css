@@ -52,9 +52,9 @@ html, body {
   /*phones*/
   @media screen and (max-width: 500px) {
 
-    /* #inner, #outer {
+    #inner, #outer {
       display: none;
-    } */
+    }
 
     .introtext {
         padding-top: 1vh;
@@ -85,7 +85,8 @@ html, body {
     }
 
     .icon {
-        padding: 3vh 7vw;
+        padding: 1vh 7vw;
+        z-index: 10;
     }
 
     .icon:hover + h3 {
