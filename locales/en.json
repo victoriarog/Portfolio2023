@@ -5,5 +5,11 @@
     "art": "Art",
     "projects": "Projects",
     "about": "About me",
-    "home": "Home"
+    "home": "Home",
+    "abouttxt": "My name is Victoria Rogatinskaya, I am a Front End developer from Barcelona, Spain. I love making websites, art and playing too much DnD.",
+    "circle":"My name is Victoria Rogatinskaya from Barcelona, Spain",
+    "circle1":"Currently a frontend intern at Wildberries",
+    "circle2":"I love coding, playing DnD, listening to true crime podcasts and making art",
+    "circle3":"I have a diploma in C++ programming and Computer Science",
+    "circle4":"My sun sign is Taurus and I was born in the year of the Tiger"
 }

@@ -5,5 +5,11 @@
     "art": "Arte",
     "projects": "Proyectos",
     "about": "Sobre Mi",
-    "home": "Inicio"
+    "home": "Inicio",
+    "abouttxt": "Me llamo Victoria Rogatinskaya. Soy una desarolladora Front End de Barcelona, España. Me encanta desarollar, dibujar y jugar DnD.",
+    "circle":"Me llamo Victoria Rogatinskaya y soy de Barcelona, España",
+    "circle1":"Actualmente soy un intern de frotend en Wildberries",
+    "circle2":"Me encanta programar, escuchar podcasts de true crime, jugar DnD y hacer ilustraciones",
+    "circle3":"Tengo una diploma de C++ programming y Computer Science",
+    "circle4":"Soy un Tauro y naci en el año del Tigre"
 }

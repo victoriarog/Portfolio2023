@@ -1,9 +1,10 @@
 <template>
-    <div class="custom-component" :class="assignedClass">
+    <div class="custom-component" :class="assignedClass" @mouseover="isHovered = true" @mouseleave="isHovered = false">
     <div class="circleouter">
+    </div>
         <div class="circleinner">
         </div>
-    </div>
+    <div v-if="isHovered" class="hover-text"><p>{{ hoverText }}</p></div>
     </div>
 </template>
 
@@ -12,26 +13,32 @@ export default {
   name: 'CustomComponent',
   props: {
     assignedClass: String,
+    hoverText: String,
+  },
+  data() {
+    return {
+      isHovered: false, 
+    };
   },
 };
 </script>
 
 <style scoped>
 
+.custom-component {
+  height: 7vh;
+  width: 7vh;
+}
+
 .circleinner {
   position: absolute;
   background-color: #ba778a;
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 15px;
   border-radius: 25px;
   z-index: 5;
-  top: 40%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  animation-duration: 2s; /* Duration of the pulsating animation */
-  animation-timing-function: ease-in-out; /* Smooth animation timing */
-  animation-iteration-count: infinite; /* Infinite looping */
-  animation-name: pulse-inner;
+  top: 35%;
+  left: 35%;
 }
 
 .circleouter {
@@ -57,13 +64,12 @@ export default {
   }
 }
 
-@keyframes pulse-inner {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
+.hover-text {
+  position: relative;
+  text-align: center;
+  font-size: 2.5vh;
+  width: 20vw !important;
 }
+
 
 </style>

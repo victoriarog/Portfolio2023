@@ -16,6 +16,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   cursor: none;
+  overflow-y: hidden;
   }
   
   h1,h2, h3, .langb  {
@@ -179,12 +180,29 @@ html, body {
     .herodiv {
       position: relative;
       top: 10vh;
-      left: 33vw;
+      left: 34vw;
     }
 
     .heroimg {
       height: 65vh;
       width: auto;
+
+      animation-duration: 4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-name: floaty; 
+    }
+
+    @keyframes floaty {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-10px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
     }
 
     .icon {
@@ -209,7 +227,6 @@ html, body {
 
     .nav {
       position: relative;
-      /* display: none; */
       display: flex;
       align-items: center;
       left: 20vw;
@@ -226,6 +243,7 @@ html, body {
     }
 
     .comph1 {
+      font-size: 5vh !important;
       padding: 0 0 0 4vw;
     }
 
@@ -233,6 +251,37 @@ html, body {
       padding: 2vh 0 0 2vh;
     }
 
+    .abouttxt {
+      font-size: 2.8vh;
+      width: 50%;
+      margin: 0 auto;
+      padding: 2vh 0;
+    }
+
+    .circle > .hover-text {
+      right: 23vw;
+      bottom: 7vh;
+    }
+
+    .circle1 > .hover-text {
+      left: 3vw;
+      bottom: 8vh;
+    }
+
+    .circle2 > .hover-text {
+      left: 5vw;
+      bottom: 2vh;
+    }
+
+    .circle3 > .hover-text {
+      right: 20vw;
+      bottom: 9vh;
+    }
+
+    .circle4 > .hover-text {
+      right: 7vw;
+      bottom: 17vh;
+    }
   
   }
     

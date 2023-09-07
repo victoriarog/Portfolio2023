@@ -9,6 +9,7 @@
       :key="index"
       :image="card.image"
       :title="card.title"
+      :cardtext="card.cardtext"
         />
     </div>
 </template>
@@ -28,4 +29,3 @@
   },
 };
 </script>
-assets/cards
