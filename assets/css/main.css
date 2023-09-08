@@ -61,14 +61,15 @@ html, body {
 
   /*phones*/
   @media screen and (max-width: 600px) {
+
     .herodiv {
-      position: relative;
-      left: 7.2vw;
-      top: 9vh;
+      padding: 5vh 12.5% 0 12.5% !important;
+      /* position: relative; */
+      
     }
 
     .heroimg {
-      height: 45vh;
+      height: 40vh;
       width: auto;
     
       
@@ -100,16 +101,16 @@ html, body {
     }
 
     .introh2 {
-      font-size: 2.3vh;
+      font-size: 2.2vh;
     }
 
     .toph1 {
-        font-size: 6vh;
+        font-size: 5vh;
         padding: 4vh 0 2vh 2vh;
     }
 
     .comph1 {
-        font-size: 5vh;
+        font-size: 4vh;
         padding: 4vh 0 3vh 2vh;
     }
 
