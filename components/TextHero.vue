@@ -38,7 +38,8 @@ export default {
   border-radius: 25px;
   z-index: 5;
   margin: 0 auto;
-  bottom: 60%;
+  bottom: 73%;
+  left: 0.2vw;
   -webkit-box-shadow: 0px 0px 13px 13px rgba(186,119,138,0.7);
 -moz-box-shadow: 0px 0px 13px 13px rgba(186,119,138,0.7);
 box-shadow: 0px 0px 13px 13px rgba(186,119,138,0.7);
