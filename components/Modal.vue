@@ -26,6 +26,7 @@
 
 <style scoped>
 
+@media screen and (min-width: 1200px) {
 .mimg {
     height: 30vh;
     width: auto;
@@ -86,6 +87,7 @@ button {
   border-radius: 16px;
   margin-top: 50px;
   cursor: none;
+}
 }
 </style>
 

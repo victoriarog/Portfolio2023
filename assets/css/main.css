@@ -63,14 +63,33 @@ html, body {
   @media screen and (max-width: 600px) {
     .herodiv {
       position: relative;
-      left: 5vw;
+      left: 7.2vw;
       top: 9vh;
     }
 
     .heroimg {
       height: 45vh;
       width: auto;
+    
+      
+      animation-duration: 4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-name: floaty; 
     }
+
+    @keyframes floaty {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-10px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
+    }
+
 
     #inner, #outer {
       display: none;
@@ -91,7 +110,7 @@ html, body {
 
     .comph1 {
         font-size: 5vh;
-        padding: 4vh 0 0 2vh;
+        padding: 4vh 0 3vh 2vh;
     }
 
     .botth1 {
@@ -118,11 +137,16 @@ html, body {
     }
 
     .nav {
-        padding-left: 10vw;
-        position: fixed;
-        bottom: 0;
-        z-index: 10;
-        background-color: #f7f4eb;
+      width: 100%;
+      padding-left: 18vw;
+      position: fixed;
+      bottom: 0;
+      z-index: 10;
+      background-color: #f7f4eb;
+    }
+
+    NuxtLink, a {
+      padding: 0 1vw 0 1vw;
     }
 
     h1, h2 {
@@ -150,7 +174,73 @@ html, body {
     .circle, .circle1, .circle2, .circle3, .circle4 {
       display: none;
     }
+    .conthi {
+      display: none;
+    }
+
+    .garlic {
+      height: 27vh;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .abouttxt {
+      padding: 1.5vh 0 0 0;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      font-size: 2.4vh;
+    }
+
+    .scroll-down{
+      display: none;
+    }
+    
+    .modal, .modal-overlay, .close {
+      display: none;
+    }
+    
+    .card {
+      display: block;
+    }
+
+    .card-content {
+      position: relative;
+      width: 80%;
+      left: 7vw;
+      padding-bottom: 4vh;
+    }
   
+    .cimg {
+      height: 18vh;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 3vh;
+    }
+
+    .pctext, .pcard {
+      font-size: 2.2vh;
+    }
+
+    .pctext {
+      margin-bottom: 0;
+    }
+
+    .acard, .pcard {
+      padding: 0 !important;
+    }
+
+    .pdivcard {
+      display: flex;
+    }
+
+    .acard {
+      width: 20%;
+    }
+
     }
   
   /*desktop*/
@@ -265,9 +355,10 @@ html, body {
 
     .abouttxt {
       font-size: 2.8vh;
-      width: 50%;
       margin: 0 auto;
-      padding: 2vh 0;
+      padding: 15vh 0 0 0;
+      flex: 4;
+      width: 40%;
     }
 
     .circle > .hover-text {
@@ -293,6 +384,20 @@ html, body {
     .circle4 > .hover-text {
       right: 7vw;
       bottom: 17vh;
+    }
+
+    .garlictxt {
+      position: relative;
+      display: flex;
+      width: 60%;
+      left: 13vw;
+      padding-bottom: 10vh;
+    }
+
+    .garlic {
+      height: 45vh;
+      position: relative;
+      flex: 1;
     }
   
   }

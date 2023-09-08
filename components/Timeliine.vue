@@ -3,45 +3,52 @@
     <div class="timeline">
   <div class="container left">
     <div class="content">
-      <h2>1998</h2>
-        <p>Born in Moscow, Russia, on May 20th 1998
+      <h1>2020</h1>
+        <p class="timelinep">Originally, I hoped to dedicate myself to game development and engine programming, 
+          but decided to enroll into a more general course to see if I liked it and could dedicate my life
+          and career to this. Enrolled into a Computer Science course at the Harbour.Space University in Barcelona.
         </p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2013</h2>
-        <p>Moved from Moscow to Barcelona, Spain
+      <h1>2020</h1>
+        <p class="timelinep">During my time at H.Space, I reached out to CG Spectrum and enrolled into their Game Programming in C++ 
+          course to broaden my horizons and keep myself busy during quarantine.
         </p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
-      <h2>2017</h2>
-        <p>Graduated from the British School of Barcelona
+      <h1>2021</h1>
+        <p class="timelinep">Picked up a front End course in university on a whim and ended up falling in love with it and started taking more and more 
+          Front End oriented classes and studying on my own time. 
         </p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2020</h2>
-        <p>Started Bachelors degree in Computer Science in 
-          Harbour.Space University, Barcelona, Spain.  
+      <h1>2021</h1>
+        <p class="timelinep">Had a lucky opportunity to enroll into an internship with an up and coming startup "Urban Animals NFT" to 
+          develop their website and be a part of their technical team. Unfortunately startup didn't take off and was frozen 
+          indefinetely.  
         </p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
-      <h2>2021</h2>
-        <p>- Diploma in C++ Programming for Unreal Engine from CG Spectrum. <br/>
-           - Started work as a Frontend Developer at Urban Animals NFT
+      <h1>2023</h1>
+        <p class="timelinep">Wrapping up my studies at H.Space and looking forward to my future. Thanks to my teacher in my Vue/Nuxt class, 
+          I found a framework I truly "clicked" with although it isn't the most popular one. Nevertheless, I am excited to 
+          develop my skills even more and find a community.
             </p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2023</h2>
-        <p>Graduated from Harbour.Space University
+      <h1>2023</h1>
+        <p class="timelinep">Looking for Junior-level jobs and, luckily, in the meantime working remotely as a Frontend intern at 
+          Wildberries, Russia. Here's to bright future! :>
             </p>
     </div>
   </div>
@@ -65,9 +72,9 @@ body {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 60%;
+  width: 60%;
   margin: 0 auto;
-  padding: 2vh 0 2vh 0;
+  padding: 5vh 0 22vh 0;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -96,7 +103,7 @@ body {
   width: 20px;
   height: 20px;
   right: -13px;
-  background-color: #f7f4eb;
+  background-color: #ba778a;
   border: 4px solid #212124;
   top: 15px;
   border-radius: 50%;
@@ -126,21 +133,27 @@ body {
   border-radius: 10px;
 }
 
+.timelinep {
+  font-size: 2.3vh;
+}
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
 
+  .timeline {
+    width: 90%;
+  }
+
   .timeline::after {
-  left: 31px;
+  left: 15px;
   }
   
   .container {
   width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
   }
 
   .left::after, .right::after {
-  left: 15px;
+  left: 1px;
   }
   .right {
   left: 0%;

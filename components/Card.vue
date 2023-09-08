@@ -4,7 +4,7 @@
       <img :src="image" alt="Project Card" class="cimg">
     </div>
     <div class="card-content">
-      <h1>{{ title }}</h1>
+      <h1 style="padding: 0;">{{ title }}</h1>
       <p class="pctext">{{ cardtext }}</p>
       <div class="pdivcard">
       <a :href="link" class="acard"><p class="pcard">Live</p></a>
@@ -15,6 +15,8 @@
 </template>
 
 <style scoped>
+
+@media screen and (min-width: 1200px) {
 .card {
   display: flex;
   width: 60%;
@@ -68,7 +70,7 @@ h1 {
   padding: 0 !important;
 }
 
-
+}
 </style>
 
 <script>
