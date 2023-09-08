@@ -103,12 +103,11 @@ body {
   z-index: 1;
 }
 
-/* Place the container to the left */
+
 .left {
   left: 0;
 }
 
-/* Place the container to the right */
 .right {
   left: 50%;
 }
@@ -120,7 +119,6 @@ body {
   left: -16px;
 }
 
-/* The actual content */
 .content {
   padding: 5px 20px;
   position: relative;

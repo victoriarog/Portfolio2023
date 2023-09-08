@@ -16,7 +16,16 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   cursor: none;
-  overflow-y: hidden;
+  overflow-y: auto ;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
   }
   
   h1,h2, h3, .langb  {
@@ -175,17 +184,20 @@ html, body {
       position: relative;
       left: 48vw;
       bottom: 88vh;
+      z-index: 1;
     }
 
     .herodiv {
       position: relative;
       top: 10vh;
       left: 34vw;
+      width: 40%;
     }
 
     .heroimg {
       height: 65vh;
       width: auto;
+      z-index: 2;
 
       animation-duration: 4s;
       animation-timing-function: ease-in-out;
@@ -214,14 +226,14 @@ html, body {
     }
 
     .socials {
-      position: relative;
+      position: fixed;
       display: flex;
       align-items: center;
       z-index: 4;
       float: right;
       transform: rotate(90deg);
       top: 40vh;
-      left: 3vw;
+      left: 90%;
       font-size: 2.7vh;
     }
 
@@ -269,8 +281,8 @@ html, body {
     }
 
     .circle2 > .hover-text {
-      left: 5vw;
-      bottom: 2vh;
+      left: 10vw;
+      bottom: 7vh;
     }
 
     .circle3 > .hover-text {

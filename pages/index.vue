@@ -2,6 +2,7 @@
     <Header/>
     <IntroT/>
     <CustomCursor/>
+    <HiIndex/>
     <Hero/>
     <TextHero assigned-class="circle" :hoverText="$t('circle')"/>
     <TextHero assigned-class="circle1" :hoverText="$t('circle1')"/>
