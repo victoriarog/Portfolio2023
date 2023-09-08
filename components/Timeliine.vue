@@ -3,7 +3,7 @@
     <div class="timeline">
   <div class="container left">
     <div class="content">
-      <h1>2020</h1>
+      <h1 style="padding-top: 0.4vh;">2020</h1>
         <p class="timelinep">Originally, I hoped to dedicate myself to game development and engine programming, 
           but decided to enroll into a more general course to see if I liked it and could dedicate my life
           and career to this. Enrolled into a Computer Science course at the Harbour.Space University in Barcelona.
@@ -12,7 +12,7 @@
   </div>
   <div class="container right">
     <div class="content">
-      <h1>2020</h1>
+      <h1 style="padding-top: 0.4vh;">2020</h1>
         <p class="timelinep">During my time at H.Space, I reached out to CG Spectrum and enrolled into their Game Programming in C++ 
           course to broaden my horizons and keep myself busy during quarantine.
         </p>
@@ -20,7 +20,7 @@
   </div>
   <div class="container left">
     <div class="content">
-      <h1>2021</h1>
+      <h1 style="padding-top: 0.4vh;">2021</h1>
         <p class="timelinep">Picked up a front End course in university on a whim and ended up falling in love with it and started taking more and more 
           Front End oriented classes and studying on my own time. 
         </p>
@@ -28,7 +28,7 @@
   </div>
   <div class="container right">
     <div class="content">
-      <h1>2021</h1>
+      <h1 style="padding-top: 0.4vh;">2021</h1>
         <p class="timelinep">Had a lucky opportunity to enroll into an internship with an up and coming startup "Urban Animals NFT" to 
           develop their website and be a part of their technical team. Unfortunately startup didn't take off and was frozen 
           indefinetely.  
@@ -37,7 +37,7 @@
   </div>
   <div class="container left">
     <div class="content">
-      <h1>2023</h1>
+      <h1 style="padding-top: 0.4vh;">2023</h1>
         <p class="timelinep">Wrapping up my studies at H.Space and looking forward to my future. Thanks to my teacher in my Vue/Nuxt class, 
           I found a framework I truly "clicked" with although it isn't the most popular one. Nevertheless, I am excited to 
           develop my skills even more and find a community.
@@ -46,7 +46,7 @@
   </div>
   <div class="container right">
     <div class="content">
-      <h1>2023</h1>
+      <h1 style="padding-top: 0.4vh;">2023</h1>
         <p class="timelinep">Looking for Junior-level jobs and, luckily, in the meantime working remotely as a Frontend intern at 
           Wildberries, Russia. Here's to bright future! :>
             </p>
