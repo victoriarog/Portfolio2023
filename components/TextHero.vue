@@ -31,21 +31,24 @@ export default {
 }
 
 .circleinner {
-  position: absolute;
-  background-color: #ba778a;
+  position: relative;
+  background-color: rgba(186,119,138,0.73);
   width: 15px;
   height: 15px;
   border-radius: 25px;
   z-index: 5;
-  top: 35%;
-  left: 35%;
+  margin: 0 auto;
+  bottom: 60%;
+  -webkit-box-shadow: 0px 0px 13px 13px rgba(186,119,138,0.7);
+-moz-box-shadow: 0px 0px 13px 13px rgba(186,119,138,0.7);
+box-shadow: 0px 0px 13px 13px rgba(186,119,138,0.7);
 }
 
 .circleouter {
   position: relative;
   background-color: rgba(186, 119, 138, 0.15);
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   border-radius: 30px;
   z-index: 4;
   animation-duration: 2s;
